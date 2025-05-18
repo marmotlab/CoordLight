@@ -26,6 +26,9 @@ conda create --name CoordLight --file requirements.txt
 
 Furthermore, install the traffic simulator - CityFlow by following the instructions outlined in https://cityflow.readthedocs.io/en/latest/start.html.
 
+If the error `'GLIBCXX_3.4.30' not found` occurs during runtime, refer to the following solution:
+[GLIBCXX_3.4.30 not found for librosa in conda environment](https://stackoverflow.com/questions/72540359/glibcxx-3-4-30-not-found-for-librosa-in-conda-virtual-environment-after-tryin).
+
 ## Files
 - Driver.py: Training codes, maintain & update network parameters
 - Runner.py: Training codes, collect trajectories via interactions  
@@ -67,3 +70,16 @@ python Tester.py
 ```
 
 After testing, the results can be found in the `/TEST_PATH/EXPERIMENT_NAME/` directory.
+
+
+## Citation
+If you find this code useful in your research, please consider citing our paper:
+```
+@article{zhang2025coordlight,
+  title={Coordlight: Learning decentralized coordination for network-wide traffic signal control},
+  author={Zhang, Yifeng and Goel, Harsh and Li, Peizhuo and Damani, Mehul and Chinchali, Sandeep and Sartoretti, Guillaume},
+  journal={IEEE Transactions on Intelligent Transportation Systems},
+  year={2025},
+  publisher={IEEE}
+}
+```
